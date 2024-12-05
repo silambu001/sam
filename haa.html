@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with Images</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to  My Gallery</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="gallery-item" onclick="toggleDetails(this)">
+            <img src="https://assets.onecompiler.app/4325t725n/4325t7qwz/1000011655.jpg" alt="Image 1">
+            <div class="details">
+                <p>I am silambarasan and i am engineering student.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="toggleDetails(this)">
+            <img src="https://assets.onecompiler.app/4325t725n/4325t7qwz/1000036259.jpg" alt="Image 2">
+            <div class="details">
+                <p>IT'S MY PONGAL PICTURE.</p>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="toggleDetails(this)">
+            <img src="https://assets.onecompiler.app/4325t725n/4325t7qwz/1000042026.jpg" alt="Image 3">
+            <div class="details">
+                <p>IT'S MY PIC WITH MY BROTHERS.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(element) {
+            const details = element.querySelector('.details');
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+            } else {
+                details.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
